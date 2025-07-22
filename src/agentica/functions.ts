@@ -11,4 +11,10 @@ export class ErrorDiagnosisService {
   async loopCheck({ code }: { code: string }) {
     return loopCheck({ code });
   }
+  async suggestFix({ code }: { code: string }) {
+    return suggestFix({ code });
+  }
+  async traceVar({ code }: { code: string }) {
+    return traceVar({ code });
+  }
 }
